@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: rgb(149, 63, 175);
+    font-size: 50px;
+}
+body {
+    background: #222;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    border: #222;
+    height: 100%;
+    width: 100%;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+.img {
+    width: 500px;
+    text-align: center;
+    justify-content: center;
+}
+    .nav {
+    display: flex;
+    justify-content: start;
+    background-color: transparent; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px;
+    
+    
+}
+.nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 15px 0;
+    border: 1px solid rgb(87, 247, 13);
+    border-radius: 13px;
+    text-align: center;
+}
+.nav ul li:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 15px rgb(20, 119, 233);
+    color: red;
+    border-color: rgb(24, 126, 24);
+}
+.nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 18px;
+}
+.nav ul li a:hover {
+    color: red;
+}
+.via {
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contenido {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.left-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+p {
+    margin: 1rem 0;
+    font-size: 1.2;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.socialMediIcon img {
+    width: 50px;
+    height: 50px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.social-item {
+    text-align: center;
+}
+.social-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: auto ;
+}
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction:inherit;
+        justify-content: space-between;
+        justify-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .contenido {
+        font-size: 12px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+    }
+    .via {
+        font-size: 14px;
+        padding: 0;
+        width: 100%;
+        max-width: 320px;
+    }
+}
